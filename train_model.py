@@ -8,7 +8,7 @@ from normalize_data import shuffle
 from penalty_function import RH_Penalty
 from model import SR2CH
 
-def plot_learming_curve(loss_train,loss_val, name_model):
+def plot_learning_curve(loss_train,loss_val, name_model):
     ep = loss_train.keys()
     tl = loss_train.values()
     vl = loss_val.values()
@@ -120,7 +120,7 @@ if __name__ == "__main__":
 
     print("End of Training - took {}".format(end-start))
     
-    plot_learming_curve(losses_train, losses_val, name_model)
+    plot_learning_curve(losses_train, losses_val, name_model)
 
     with open('/data/users/jrodrigu/losses/final/train_loss_{}.pkl'.format(name_model), 'wb') as fp:
         pickle.dump(losses_train, fp)

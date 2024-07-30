@@ -5,7 +5,7 @@ def qsat(T, P):
     """ Function to calculate saturation vapour pressure profile from profiles of T and P
         Gives qsat_wat for T>273.15 and qsat_ice for T < 273.15
         T (temperature) needs to be in K
-        P (pressure) needs to be in Pa"""
+        P (pressure) needs to be in kPa"""
 
     P = P * 10**3
     epsilon = 0.622
